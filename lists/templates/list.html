@@ -2,7 +2,7 @@
 
 {% block header_text %}Your To-Do list{% endblock %}
 
-{% block form_action %}/lists/{{ listt.id}}/add_item{% endblock %}
+{% block form_action %}/lists/{{ listt.id }}/add_item{% endblock %}
 
 {% block table %}
 	<table id="id_list_table" class="table">
@@ -11,3 +11,5 @@
 		{% endfor %}
 	</table>
 {% endblock %}
+
+{% block list_title %}<p>This is your unique list. It is available at <a href='/lists/{{ listt.id }}/'>superlists.com/lists/{{ listt.id }}/</a>. </p>{% endblock %}
