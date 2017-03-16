@@ -6,7 +6,7 @@ import time
 import os
 
 MAX_WAIT = 10
-
+# STAGING_SERVER=52.24.128.94 python manage.py test functional_tests
 
 class NewVisitorTest(StaticLiveServerTestCase):
 
