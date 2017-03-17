@@ -2,7 +2,7 @@
 
 {% block header_text %}Your To-Do list{% endblock %}
 
-{% block form_action %}/lists/{{ listt.id }}/{% endblock %}
+{% block form_action %}{% url 'view_list' listt.id %}{% endblock %}
 
 {% block table %}
 	<table id="id_list_table" class="table">

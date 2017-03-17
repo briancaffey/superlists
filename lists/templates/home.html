@@ -2,7 +2,7 @@
 
 {% block header_text %}Start a new To-Do list{% endblock %}
 
-{%block form_action %}/lists/new{% endblock %}
+{%block form_action %}{% url 'new_list' %}{% endblock %}
 
 {% block list_title %}<p>Welcome to Superlists! Superlists lets users add to-do items to unique lists. When you type a list item in the field above, you start a new list that you can come back to at any time. Anyone else with your list link can also access your list and add items. Ready to make your first lists? Choose Superlists!</p>{% endblock %}
 
